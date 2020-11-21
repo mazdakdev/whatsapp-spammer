@@ -1,20 +1,21 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
-browser = webdriver.Firefox(executable_path='./geckodriver')
-print("this script is created by Mazdak Pakaghideh \n")
-print("github.com/mazdakpak/whatsapp-spammer \n")
-name = str(input("Name => \n"))
-msg = str(input("Message => \n"))
-num = int(input("Number of messages to send(0 for ultimated) =>"))
+
+browser = webdriver.Firefox(executable_path='./geckodriver.exe')
+
+name = str(input("Name of contact => "))
+msg = str(input("Message => "))
+num = int(input("Number of messages to send (0 for ultimated) => "))
 
 browser.get("https://web.whatsapp.com")
-time.sleep(15)
-def sendMesaage(reciver , number , message):
-    num = 1
+start = str(input("Type ENTER when you log into Whatsapp and you're ready: "))
+
+def sendMesaage(reciver, number, message):
+    print("Spamming...")
     group = browser.find_element_by_xpath(f"//span[@title='{reciver}']")
     group.click()
-    typech = browser.find_elements_by_class_name("_3FRCZ")
+    typech = browser.find_elements_by_class_name("_1awRl")
 
     if(number == 0):
         while(1):
@@ -27,13 +28,8 @@ def sendMesaage(reciver , number , message):
             typech[1].send_keys(Keys.ENTER)
             time.sleep(0.1)
 
-
-
-sendMesaage(name ,num , msg )
+    print("Finish :)")
 
 
 
-        
-        
-        
-    
+sendMesaage(name, num, msg )
