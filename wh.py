@@ -1,6 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import platform
+
+os_name = platform.system()
 
 class terminalColors:
     HEADER = '\033[95m'
@@ -47,8 +50,12 @@ print(terminalColors.OKBLUE+"Number of messages to send (0 for ultimated)"+termi
 num = int(input("=> "))
 print(terminalColors.OKBLUE+"Delay beatwean each mesaage (from 0.1)"+terminalColors.ENDC)
 delay = float(input("=> "))
+if(os_name == "Linux"):
+    browser = webdriver.Firefox(executable_path='./geckodriver')
+elif(os_name == "Windows"):
+     browser = webdriver.Firefox(executable_path='./geckodriver.exe')
 
-browser = webdriver.Firefox(executable_path='./geckodriver.exe')
+
 browser.get("https://web.whatsapp.com")
 
 start = str(input(terminalColors.OKGREEN+"🔥 - Type ENTER when you log into Whatsapp and you're ready: ")+terminalColors.ENDC)
