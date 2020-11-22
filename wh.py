@@ -30,9 +30,11 @@ print(terminalColors.WARNING+'''
 |                                                      |
 |3-) Enter how many times you want to send the message |
 |                                                      |
-|4-) Log in to your Whatsapp                           |
+|4-) Delay beatwean each message                       |
 |                                                      |
-|5-) Type Enter after logging in and you are ready     |
+|5-) Log in to your Whatsapp                           |
+|                                                      |
+|6-) Type Enter after logging in and you are ready     |
 -------------------------------------------------------|
 
 '''+terminalColors.ENDC)
@@ -43,13 +45,15 @@ print(terminalColors.OKBLUE+"Message"+terminalColors.ENDC)
 msg = str(input("=> "))
 print(terminalColors.OKBLUE+"Number of messages to send (0 for ultimated)"+terminalColors.ENDC)
 num = int(input("=> "))
+print(terminalColors.OKBLUE+"Delay beatwean each message"+terminalColors.ENDC)
+delay = float(input("=> "))
 
 browser = webdriver.Firefox(executable_path='./geckodriver.exe')
 browser.get("https://web.whatsapp.com")
 
 start = str(input(terminalColors.OKGREEN+"🔥 - Type ENTER when you log into Whatsapp and you're ready: ")+terminalColors.ENDC)
 
-def sendMesaage(reciver, number, message):
+def sendMesaage(reciver, number, message , de):
     print(terminalColors.WARNING+"Spamming..."+terminalColors.ENDC)
     group = browser.find_element_by_xpath(f"//span[@title='{reciver}']")
     group.click()
@@ -59,15 +63,15 @@ def sendMesaage(reciver, number, message):
         while(1):
             typech[1].send_keys(msg)
             typech[1].send_keys(Keys.ENTER)
-            time.sleep(0.1)
+            time.sleep(de)
     else:
         for i in range(number):
             typech[1].send_keys(msg)
             typech[1].send_keys(Keys.ENTER)
-            time.sleep(0.1)
+            time.sleep(de)
 
     print(terminalColors.OKGREEN+"Finish :)"+terminalColors.ENDC)
 
 
 
-sendMesaage(name, num, msg )
+sendMesaage(name, num, msg  , delay)
