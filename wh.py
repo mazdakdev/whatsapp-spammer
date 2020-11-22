@@ -18,7 +18,7 @@ print(terminalColors.WARNING+'''
 
 🔒 - Use at your own risk, we are not responsible for your actions.
 
-☑️  - Made by Mazdak Pakaghideh and improve by OrlatoDev.
+☑️  - Made by Mazdak Pakaghideh and  OrlatoDev.
 
 📝 - Notes: a firefox window will open, minimize it and follow the instructions presented in the terminal (right after you will have to log into Whatsapp in that same window)
 
@@ -30,9 +30,11 @@ print(terminalColors.WARNING+'''
 |                                                      |
 |3-) Enter how many times you want to send the message |
 |                                                      |
-|4-) Log in to your Whatsapp                           |
+|4-) Delay beatwean each mesaage (from 0.1)            |
 |                                                      |
-|5-) Type Enter after logging in and you are ready     |
+|5-) Log in to your Whatsapp                           |
+|                                                      |
+|6-) Type Enter after logging in and you are ready     |
 -------------------------------------------------------|
 
 '''+terminalColors.ENDC)
@@ -43,6 +45,8 @@ print(terminalColors.OKBLUE+"Message"+terminalColors.ENDC)
 msg = str(input("=> "))
 print(terminalColors.OKBLUE+"Number of messages to send (0 for ultimated)"+terminalColors.ENDC)
 num = int(input("=> "))
+print(terminalColors.OKBLUE+"Delay beatwean each mesaage (from 0.1)"+terminalColors.ENDC)
+delay = float(input("=> "))
 
 browser = webdriver.Firefox(executable_path='./geckodriver.exe')
 browser.get("https://web.whatsapp.com")
@@ -59,12 +63,12 @@ def sendMesaage(reciver, number, message):
         while(1):
             typech[1].send_keys(msg)
             typech[1].send_keys(Keys.ENTER)
-            time.sleep(0.1)
+            time.sleep(delay)
     else:
         for i in range(number):
             typech[1].send_keys(msg)
             typech[1].send_keys(Keys.ENTER)
-            time.sleep(0.1)
+            time.sleep(delay)
 
     print(terminalColors.OKGREEN+"Finish :)"+terminalColors.ENDC)
 

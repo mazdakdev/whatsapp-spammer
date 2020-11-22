@@ -1,0 +1,8 @@
+1606022659913	geckodriver	INFO	Listening on 127.0.0.1:52477
+1606022659931	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2MeUnm"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606022668904	Marionette	INFO	Listening on port 33903
+1606022669368	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://web.whatsapp.com/app.79cf3884c4bdafb8f9ef.js, line 1: unreachable code after return statement
+JavaScript warning: https://web.whatsapp.com/app.79cf3884c4bdafb8f9ef.js, line 1: unreachable code after return statement
+1606022729336	Marionette	INFO	Stopped listening on port 33903
