@@ -31,14 +31,17 @@ print(terminalColors.WARNING+'''
 |                                                      |
 |2-) Type the message you want to send                 |
 |                                                      |
-|3-) Enter how many times you want to send the message |
+|3-) Enter how many times you want to send the message |                                               |
 |                                                      |
-|4-) Delay beatwean each mesaage (from 0.1)            |
+|4-) Delay beatwean each message                       |
 |                                                      |
 |5-) Log in to your Whatsapp                           |
 |                                                      |
 |6-) Type Enter after logging in and you are ready     |
+|                                                      |   
+|                                                      | 
 -------------------------------------------------------|
+
 
 '''+terminalColors.ENDC)
 
@@ -60,7 +63,7 @@ browser.get("https://web.whatsapp.com")
 
 start = str(input(terminalColors.OKGREEN+"🔥 - Type ENTER when you log into Whatsapp and you're ready: ")+terminalColors.ENDC)
 
-def sendMesaage(reciver, number, message):
+def sendMesaage(reciver, number, message , de):
     print(terminalColors.WARNING+"Spamming..."+terminalColors.ENDC)
     group = browser.find_element_by_xpath(f"//span[@title='{reciver}']")
     group.click()
@@ -70,15 +73,15 @@ def sendMesaage(reciver, number, message):
         while(1):
             typech[1].send_keys(msg)
             typech[1].send_keys(Keys.ENTER)
-            time.sleep(delay)
+            time.sleep(de)
     else:
         for i in range(number):
             typech[1].send_keys(msg)
             typech[1].send_keys(Keys.ENTER)
-            time.sleep(delay)
+            time.sleep(de)
 
     print(terminalColors.OKGREEN+"Finish :)"+terminalColors.ENDC)
 
 
 
-sendMesaage(name, num, msg )
+sendMesaage(name, num, msg  , delay)
