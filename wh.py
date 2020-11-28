@@ -1,56 +1,51 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+import platform
+import cfonts
+import colorama
+import os
 
-class terminalColors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+colorama.init()
 
-print(terminalColors.WARNING+'''
-🔥🔥🔥 WHATSAPP SPAMMER 🔥🔥🔥
+cfonts.say("WHATSAPP", colors=["green", "white"])
+cfonts.say("PY SPAMMER", colors=["red", "white"])
 
+print(colorama.Fore.GREEN+'''
 🔒 - Use at your own risk, we are not responsible for your actions.
 
-☑️  - Made by Mazdak Pakaghideh and improve by OrlatoDev.
+☑️ - Made by Mazdak Pakaghideh and OrlatoDev.
 
-📝 - Notes: a firefox window will open, minimize it and follow the instructions presented in the terminal (right after you will have to log into Whatsapp in that same window)
+📝 - Notes: follow the instructions below and when a Chrome window open, log in Whatsapp Web and return to follow the instructions.
 
-📝 - Instructions:
---------------------------------------------------------
-|1-) Type the name of the contact or group             |
-|                                                      |
-|2-) Type the message you want to send                 |
-|                                                      |
-|3-) Enter how many times you want to send the message |
-|                                                      |
-|4-) Log in to your Whatsapp                           |
-|                                                      |
-|5-) Type Enter after logging in and you are ready     |
--------------------------------------------------------|
+'''+colorama.Fore.RESET)
 
-'''+terminalColors.ENDC)
-
-print(terminalColors.OKBLUE+"Name of contact or group"+terminalColors.ENDC)
+print(colorama.Fore.RED+"Name of contact or group")
 name = str(input("=> "))
-print(terminalColors.OKBLUE+"Message"+terminalColors.ENDC)
+print("Message")
 msg = str(input("=> "))
-print(terminalColors.OKBLUE+"Number of messages to send (0 for ultimated)"+terminalColors.ENDC)
+print("Number of messages to send (0 for ultimated)")
 num = int(input("=> "))
+print("Delay beatwean each mesaage (from 0.1)")
+delay = float(input("=> "))
 
-browser = webdriver.Firefox(executable_path='./geckodriver.exe')
+os_name = platform.system()
+dir_path = os.getcwd()
+profile = os.path.join(dir_path, "profile", "wpp")
+options = webdriver.ChromeOptions()
+options.add_argument(
+        r"user-data-dir={}".format(profile))
+
+browser = webdriver.Chrome("./chromedriver.exe", options=options)
+
 browser.get("https://web.whatsapp.com")
 
-start = str(input(terminalColors.OKGREEN+"🔥 - Type ENTER when you log into Whatsapp and you're ready: ")+terminalColors.ENDC)
+time.sleep(6)
+#here i'm geting a unknow error, that say that some device is not working, i don´t know how fix this
+start = str(input("🔥 - Type ENTER when you log into Whatsapp and you're ready: "))
 
-def sendMesaage(reciver, number, message):
-    print(terminalColors.WARNING+"Spamming..."+terminalColors.ENDC)
+def sendMessage(reciver, number, msg, delay):
+    print("Spamming...")
     group = browser.find_element_by_xpath(f"//span[@title='{reciver}']")
     group.click()
     typech = browser.find_elements_by_class_name("_1awRl")
@@ -59,15 +54,15 @@ def sendMesaage(reciver, number, message):
         while(1):
             typech[1].send_keys(msg)
             typech[1].send_keys(Keys.ENTER)
-            time.sleep(0.1)
+            time.sleep(delay)
     else:
         for i in range(number):
             typech[1].send_keys(msg)
             typech[1].send_keys(Keys.ENTER)
-            time.sleep(0.1)
+            time.sleep(delay)
 
-    print(terminalColors.OKGREEN+"Finish :)"+terminalColors.ENDC)
+    print(colorama.Fore.GREEN+"\nFinish :)")
+    os.system("cls")
+    browser.close()
 
-
-
-sendMesaage(name, num, msg )
+sendMessage(name, num, msg, delay)
