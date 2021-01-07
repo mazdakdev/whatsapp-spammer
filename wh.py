@@ -48,14 +48,14 @@ print(colorama.Fore.RED+'''
 
 ''')
 
-print("Name of contact or group")
+print(colorama.Fore.BLUE+"Name of contact or group")
 name = str(input("=> "))
-print("Message")
+print( colorama.Fore.CYAN+"Message")
 msg = str(input("=> "))
-print("Number of messages to send (0 for ultimated)")
+print(colorama.Fore.YELLOW+"Number of messages to send (0 for ultimated)")
 num = int(input("=> "))
 
-print("Delay beatwean each mesaage (from 0.1)")
+print(colorama.Fore.GREEN+"Delay beatwean each mesaage (from 0.1)")
 delay = float(input("=> "))
 if(os_name == "Linux"):
     browser = webdriver.Firefox(executable_path='./geckodriver')
@@ -71,7 +71,7 @@ start = str(input("🔥 - Type ENTER when you log into Whatsapp and you're ready
 
 
 def sendMesaage(reciver, number, message , de):
-    print("Spamming...")
+    print(colorama.Fore.RED+"Spamming...")
 
     group = browser.find_element_by_xpath(f"//span[@title='{reciver}']")
     group.click()
