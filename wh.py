@@ -66,7 +66,7 @@ elif(os_name == "Windows"):
 browser.get("https://web.whatsapp.com")
 
 time.sleep(6)
-#here i'm geting a unknow error, that say that some device is not working, i don´t know how fix this
+
 start = str(input("🔥 - Type ENTER when you log into Whatsapp and you're ready: "))
 
 
