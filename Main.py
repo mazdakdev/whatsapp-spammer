@@ -35,7 +35,7 @@ print(colorama.Fore.RED+'''
 |                                                      |
 |2-) Type the message you want to send                 |
 |                                                      |
-|3-) Enter how many times you want to send the message |                                               |
+|3-) Enter how many times you want to send the message |                             
 |                                                      |
 |4-) Delay beatwean each message                       |
 |                                                      |
@@ -59,15 +59,8 @@ num = int(input("=> "))
 print(colorama.Fore.GREEN+"Delay beatwean each mesaage (from 0.1)")
 delay = float(input("=> "))
 
-if(os_name == "Linux"):
-    browser = webdriver.Firefox(executable_path='./geckodriver_2')
 
-elif(os_name == "Windows"):
-    browser = webdriver.Firefox(executable_path='./geckodriver.exe')
-
-elif(os_name == "Darwin"):
-    browser = webdriver.Firefox(executable_path='./geckodriver_3.exe')
-
+browser = webdriver.Firefox(executable_path='your geckodriver path here')
 
 browser.get("https://web.whatsapp.com")
 
