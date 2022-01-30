@@ -64,3 +64,110 @@ JavaScript warning: https://web.whatsapp.com/app.6be31a9914b3f8e528be.js, line 1
 1610006870909	Marionette	INFO	Stopped listening on port 34603
 1610006872282	Marionette	INFO	Stopped listening on port 36835
 1610006873320	Marionette	INFO	Stopped listening on port 40933
+1643523136726	geckodriver	INFO	Listening on 127.0.0.1:64585
+1643523137055	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64586" "-foreground" "-no-remote" "-profile" "/var/folders/v9/x_m26z614y585ytpgd7kjn_c0000gn/T/rust_mozprofilezY8JiV"
+1643523164147	Marionette	INFO	Marionette enabled
+2022-01-30 09:42:45.622 firefox-bin[50740:317118] Warning: Expected min height of view: (<NSButton: 0x116882400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:42:45.623 firefox-bin[50740:317118] Warning: Expected min height of view: (<NSButton: 0x13045cc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:42:45.623 firefox-bin[50740:317118] Warning: Expected min height of view: (<NSButton: 0x13045a000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:42:45.624 firefox-bin[50740:317118] Warning: Expected min height of view: (<NSButton: 0x13045d400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:42:45.624 firefox-bin[50740:317118] Warning: Expected min height of view: (<NSButton: 0x130459400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:42:45.624 firefox-bin[50740:317118] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x13045dc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:42:45.625 firefox-bin[50740:317118] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x108dec400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/v9/x_m26z614y585ytpgd7kjn_c0000gn/T/rust_mozprofilezY8JiV/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:64586/devtools/browser/aebfdbac-b924-4d61-a0a6-5924a6a6d7b0
+1643523166832	Marionette	INFO	Listening on port 64607
+1643523166932	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1643523341383	geckodriver	INFO	Listening on 127.0.0.1:49571
+1643523341910	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49572" "-foreground" "-no-remote" "-profile" "/var/folders/v9/x_m26z614y585ytpgd7kjn_c0000gn/T/rust_mozprofilesDHvnj"
+1643523343455	Marionette	INFO	Marionette enabled
+2022-01-30 09:45:44.471 firefox-bin[51513:322441] Warning: Expected min height of view: (<NSButton: 0x13221d400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:45:44.472 firefox-bin[51513:322441] Warning: Expected min height of view: (<NSButton: 0x13225a400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:45:44.472 firefox-bin[51513:322441] Warning: Expected min height of view: (<NSButton: 0x13225f400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:45:44.472 firefox-bin[51513:322441] Warning: Expected min height of view: (<NSButton: 0x132259c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:45:44.473 firefox-bin[51513:322441] Warning: Expected min height of view: (<NSButton: 0x13225b000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:45:44.473 firefox-bin[51513:322441] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x132258c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:45:44.473 firefox-bin[51513:322441] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11865b800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/v9/x_m26z614y585ytpgd7kjn_c0000gn/T/rust_mozprofilesDHvnj/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:49572/devtools/browser/5ffbc5b2-8452-4a8e-82e2-4960bc979d90
+1643523345587	Marionette	INFO	Listening on port 49581
+1643523345706	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-middle_7fa161964e93db72b8d00ae22189d75f.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-end_62ed28be622237546fd39f9468a76a49.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/notification_2a485d84012c106acef03b527bb54635.mp3
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+2022-01-30 09:47:54.161 firefox-bin[51513:322441] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+1643523496179	geckodriver	INFO	Listening on 127.0.0.1:50192
+1643523496697	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50193" "-foreground" "-no-remote" "-profile" "/var/folders/v9/x_m26z614y585ytpgd7kjn_c0000gn/T/rust_mozprofiler6i2ds"
+1643523497637	Marionette	INFO	Marionette enabled
+2022-01-30 09:48:18.452 firefox-bin[52064:326555] Warning: Expected min height of view: (<NSButton: 0x117eca000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:48:18.452 firefox-bin[52064:326555] Warning: Expected min height of view: (<NSButton: 0x130aaf000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:48:18.453 firefox-bin[52064:326555] Warning: Expected min height of view: (<NSButton: 0x130ab0400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:48:18.453 firefox-bin[52064:326555] Warning: Expected min height of view: (<NSButton: 0x130ab4800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:48:18.453 firefox-bin[52064:326555] Warning: Expected min height of view: (<NSButton: 0x130ab3400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:48:18.454 firefox-bin[52064:326555] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x130ab0800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-01-30 09:48:18.454 firefox-bin[52064:326555] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11712e000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/v9/x_m26z614y585ytpgd7kjn_c0000gn/T/rust_mozprofiler6i2ds/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:50193/devtools/browser/bcb7de3c-7841-42a1-9555-d3f77aa50753
+1643523499526	Marionette	INFO	Listening on port 50200
+1643523499617	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-middle_7fa161964e93db72b8d00ae22189d75f.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/sequential-ptt-end_62ed28be622237546fd39f9468a76a49.mp3
+JavaScript error: https://web.whatsapp.com/serviceworker.js, line 1: TypeError: Cache.put: Cache got basic response with bad status 206 while trying to add request https://web.whatsapp.com/notification_2a485d84012c106acef03b527bb54635.mp3
+1643523534816	Marionette	INFO	Stopped listening on port 50200
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
