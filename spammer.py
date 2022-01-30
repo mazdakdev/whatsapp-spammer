@@ -12,7 +12,7 @@ os_name = platform.system()
 colorama.init()
 
 cfonts.say("WHATSAPP", colors=["green", "white"])
-cfonts.say("PY SPAMMER", colors=["red", "white"])
+cfonts.say("SPAMMER", colors=["red", "white"])
 
 print(colorama.Fore.BLUE+'''
 🔒 - Use at your own risk, we are not responsible for your actions.
