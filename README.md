@@ -19,7 +19,7 @@
 ![screenshot](https://s6.uupload.ir/files/screen_shot_2022-01-30_at_10.42.53_am_yonp.png)
 
 - - - - 
-# Intallation 
+# Installation 
 
 ###  Download Geckodriver from <a href="https://github.com/mozilla/geckodriver/releases">this</a> link
 
